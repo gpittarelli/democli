@@ -1,0 +1,36 @@
+{
+  "name": "democli",
+  "version": "0.0.1",
+  "description": ".dem parsing CLI tool",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel --out-dir=lib src/",
+    "dev": "npm run build -- -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "plugins": [
+      "add-module-exports"
+    ]
+  },
+  "keywords": [],
+  "author": "George Pittarelli <g@gjp.cc>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-polyfill": "6.23.0",
+    "commander": "2.9.0",
+    "emit-stream": "0.1.2",
+    "event-stream": "3.3.4",
+    "highland": "2.10.2",
+    "json-stream-stringify": "1.5.0",
+    "tf2-demo": "file:../demo.js"
+  },
+  "devDependencies": {
+    "babel-cli": "6.24.0",
+    "babel-plugin-add-module-exports": "0.2.1",
+    "babel-preset-env": "1.2.2"
+  }
+}
