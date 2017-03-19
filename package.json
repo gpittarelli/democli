@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": ".dem parsing CLI tool",
   "main": "index.js",
+  "bin": {
+    "tf2demo": "./bin/cli"
+  },
   "scripts": {
     "build": "babel --out-dir=lib src/",
     "dev": "npm run build -- -w",
